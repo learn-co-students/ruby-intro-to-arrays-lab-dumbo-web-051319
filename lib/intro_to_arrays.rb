@@ -1,16 +1,47 @@
 def instantiate_new_array
-  @my_new_array = Array.new
+  my_new_array = Array.new
+  return my_new_array
 end
 
 def array_with_two_elements
 
-@my_two_array = ["a", "b"]
+my_two_array = ["a", "b"]
+return my_two_array
 
 end
 
-def first_element(@taylor_swift)
-@taylor_swift = ["Welcome to New York", "Blank Space", "Style", "Out of The Woods"]
+taylor_swift = ["Welcome to New York", "Blank Space", "Style", "Out of The Woods"]
 
-return @taylor_swift[0]
+def first_element(taylor_swift)
 
+
+return taylor_swift[0]
+
+end
+
+def third_element(taylor_swift)
+  return taylor_swift[2]
+end
+
+def last_element(taylor_swift)
+  return taylor_swift[-1]
+
+end
+
+south_east_asia = ["Thailand", "Cambodia", "Singapore", "Myanmar"]
+
+
+def first_element_with_array_methods(south_east_asia)
+  return south_east_asia.first
+
+end
+
+def last_element_with_array_methods(south_east_asia)
+  return south_east_asia.last
+end
+
+programming_languages = ["Ruby", "Javascript", "Python", "C++", "Java", "Lisp", "PHP", "Clojure"]
+
+def length_of_array(programming_languages)
+  return programming_languages.count
 end
